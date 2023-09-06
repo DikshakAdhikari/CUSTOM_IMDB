@@ -1,5 +1,6 @@
 
 export const Search = ({setSearch})=> {
+    console.log("brrahhhh");
     return (
         <input 
         type="text"
