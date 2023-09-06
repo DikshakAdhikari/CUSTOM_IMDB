@@ -25,7 +25,7 @@ export const Sort = ({sort, setSort}) => {
             <option value="year">Year</option>
             <option value="rating">Rating</option>
         </select>
-        <button className='flex items-center content-center h-[30px] w-[30px] outline-none border-black border-solid border-[1px] ml-[5px] rounded-[4px] bg-transparent cursor-pointer' 
+        <button className='flex items-center justify-center h-[30px] w-[30px] outline-none border-black border-solid border-[1px] ml-[5px] rounded-[4px] bg-transparent cursor-pointer' 
         onClick={onArrowChange}
         >
         <p className=' text-[18px] font-bold text-black'>&uarr;</p>
