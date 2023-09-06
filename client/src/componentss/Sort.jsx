@@ -2,7 +2,6 @@ import React from 'react'
 
 export const Sort = ({sort, setSort}) => {
 
- console.log('s0rtttttt');
         const onSelectChange = ({ currentTarget: input }) => {
             setSort({ sort: input.value, order: sort.order });
         };
