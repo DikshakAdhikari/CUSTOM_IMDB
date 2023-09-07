@@ -1,7 +1,7 @@
 
 export const Pagination = ({page, total, limit, setPage}) => {
+
     const totalPages= Math.ceil(total/limit);
-console.log("paginationm");
     const onClick= (newPage)=>{
         setPage(newPage+1);
     };

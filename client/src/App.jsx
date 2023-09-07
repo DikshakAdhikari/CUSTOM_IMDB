@@ -25,9 +25,8 @@ function App() {
        // console.log("giraffeee");
         const {data}= await axios.get(url);
         setobj(data);
-        // console.log(data);
+         console.log(data);
       }catch(err){
-        console.log("booooooom");
         console.log(err);
       }
     };
@@ -41,12 +40,12 @@ function App() {
       <div className='w-[10000px] m-3 rounded-[10px] shadow-md flex flex-col overflow-hidden bg-white '>
         <div className='flex content-center h-[80px] bg-black justify-between'>
           <img src="./images/logo.png" alt="logo" className='w-[100px] object-contain ml-[15px]' />
-          <Search setSearch={(search)=> setSearch(search)} />
+          <Search setSearch={setSearch} />
         </div>
         <div className='h-[500px] flex'>
           <div className=' relative'>
             <Table movies={obj.movies?obj.movies:[]} />
-            <Pagination page={page} limit={obj.limit ? obj.limit : 0} total={obj.total ? obj.total : 0} setPage={(page)=> setPage(page)} />
+            <Pagination page={page} limit={obj.limit ? obj.limit : 0} total={obj.total ? obj.total : 0} setPage={setPage} />
           </div>
             <div >
               <Sort sort={sort} setSort={(sort)=> setSort(sort)} />
