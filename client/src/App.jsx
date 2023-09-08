@@ -22,7 +22,7 @@ function App() {
     const getAllMovies= async ()=> {
       try{
         const url= `${base_url}?page=${page}&sort=${sort.sort},${sort.order}&genre=${filterGenre.toString()}&search=${search}`;
-       // console.log("giraffeee");
+       console.log("giraffeee");
         const {data}= await axios.get(url);
         setobj(data);
          console.log(data);
