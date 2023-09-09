@@ -10,6 +10,7 @@ export const Genre = ({genres, filterGenre, setFilterGenre}) => {
 			setFilterGenre(state);
 		}
 	};
+  console.log(genres);
   return (
     <div className='m-[10px] items-start py-[10px] px-[20px] shadow-md bg-white rounded-[4px]'>
         <h1 className=' m-0 text-[16px] text-center '>Filter by Genre</h1>
